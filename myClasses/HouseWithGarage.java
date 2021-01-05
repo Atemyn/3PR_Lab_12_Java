@@ -40,35 +40,29 @@ public class HouseWithGarage extends Building
 			super.input();
 			garage.inputGarage();
 		}
-/*
-        public override string ToString()
-        {
-			string s = "";
-			s += "Свойства данного здания:\n" + "Название строительной компании: " +
-				Convert.ToString(companyName) + "\nОбщее количество зданий этой компании: " +
-				Convert.ToString(countOfBuildings) + "\nТип здания: " + Convert.ToString(typeOfBuilding) +
-				"\nДлина стороны основания: " + Convert.ToString(sideLength) + "\nВысота фундамента: " +
-				Convert.ToString(basementHeight) + "\nВысота этажа: " + Convert.ToString(floorHeight) +
-				"\nКоличество этажей: " + Convert.ToString(floorAmount) + "\nОбщее количество окон: " +
-				Convert.ToString(facade.getWindowsAmount()) + "\nКоличество открытых окон: " +
-				Convert.ToString(facade.getOpenedWindowsAmount()) + "\nКоэффициент устойчивости: " +
-				Convert.ToString(stabilityFactor) + "\nДанные о гараже:\nДлина стороны гаража: " +
-				Convert.ToString(getSideLength()) + "\nШирина стороны гаража: " +
-				Convert.ToString(getSideWidth()) + "\nВысота гаража: " + Convert.ToString(getHeight()) + "\n";
-			return s;
-		}
 
+        public String ToString()
+        {
+			return "Свойства данного здания:\n" + "Название строительной компании: " + companyName +
+				"\nОбщее количество зданий этой компании: " + countOfBuildings + "\nТип здания: " +
+				typeOfBuilding + "\nДлина стороны основания: " + sideLength + "\nВысота фундамента: " +
+				basementHeight + "\nВысота этажа: " + floorHeight + "\nКоличество этажей: " + floorAmount +
+				"\nОбщее количество окон: " + facade.getWindowsAmount() + "\nКоличество открытых окон: " +
+				facade.getOpenedWindowsAmount() + "\nКоэффициент устойчивости: " + stabilityFactor +
+				"\nДанные о гараже:\nДлина стороны гаража: " + getSideLength() + "\nШирина стороны гаража: " +
+				getSideWidth() + "\nВысота гаража: " + getHeight() + "\n";
+		}
+/*
         public override double getVolume()
 		{
 			return (sideLength * sideLength * floorHeight * floorAmount) +
 				(getSideLength() * getSideWidth() * getHeight());
-		}*/
-
+		}
+*/
 		public void getGarage()
 		{
 			garage.getGarage();
 		}
-
 		public double getSideLength()
 		{
 			return garage.getSideLength();

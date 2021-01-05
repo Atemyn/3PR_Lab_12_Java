@@ -14,6 +14,7 @@ public class PR_Lab_12_Java{
 			house1.get();
 
 			HouseWithGarage house2 = new HouseWithGarage("Коттедж", 5.0, 1.0, 3.0, 5, 5, 5, 1.0, 2.0, 3.0);
+			System.out.printf("%s", house2.ToString());
 		/*..............................*/
 	}
 }

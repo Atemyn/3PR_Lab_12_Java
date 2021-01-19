@@ -2,6 +2,7 @@ package myClasses;
 import java.util.Scanner;
 
 public class HouseWithGarage extends Building
+implements Cloneable 
 {
 		private Garage garage = new Garage();
 
@@ -16,6 +17,18 @@ public class HouseWithGarage extends Building
 		{
 			super(typeOfBuilding, sideLength, basementHeight, floorHeight, floorAmount, windowsAmount, openedWindowsAmount);
 			this.garage = new Garage(sideLengthG, sideWidthG, heightG);
+		}
+		// Метод для клонирования.
+		public Object clone()
+		{
+			try{
+				return(HouseWithGarage)super.clone();
+			}
+			catch(CloneNotSupportedException e)
+			{
+				
+			}
+			return this;
 		}
 
 		/* Функция по выводу свойств экземпляра класса Building. */

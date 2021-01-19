@@ -27,5 +27,12 @@ public class PR_Lab_12_Java{
 		System.out.println("Здание с круглым основанием:" + "\nОбъем: " + c.getVolume() + "\nПлотность: " + c.getDensity() + "\n");
 		System.out.println("Здание-тетраэдр:" + "\nОбъем: " + t.getVolume() + "\nПлотность: " + t.getDensity() + "\n");	
 		/*..............................*/
+		/* Мелкое копирование. */
+		HouseWithGarage houseFirst = new HouseWithGarage("Офисное здание", 1.0, 1.0, 1.0, 1, 1, 1, 1.0, 1.0, 1.0);
+		HouseWithGarage houseSecond = new HouseWithGarage("Коттедж", 5.0, 1.0, 3.0, 5, 5, 5, 1.0, 2.0, 3.0);
+		houseFirst = houseSecond;
+		houseSecond.input();
+		System.out.printf("%s", houseFirst.ToString());
+		/*.....................*/
 	}
 }
